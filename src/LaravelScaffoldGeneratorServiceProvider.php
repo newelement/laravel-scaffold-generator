@@ -13,11 +13,7 @@ class LaravelScaffoldGeneratorServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $stubsDirectory = __DIR__.'/../stubs';
-
-        //$this->publishes([$viewsDirectory => base_path('resources/views/vendor/'.$this->pluginName)], 'views');
-        //$this->publishes([ $publishAssetsDirectory => public_path('vendor/'.$this->pluginName) ], 'public');
-
+        //$stubsDirectory = __DIR__.'/../stubs';
     }
 
     private function registerConsoleCommands()

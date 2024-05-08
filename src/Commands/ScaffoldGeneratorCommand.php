@@ -14,7 +14,7 @@ class ScaffoldGeneratorCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'make:scaffold 
+    protected $signature = 'make:scaffold 
                         {name : The class prefix name for the file(s) to be generated} 
                         {--a : Create all the files. Service, Model, Migration, Controller, Resource}
                         {--service : Create service class}
