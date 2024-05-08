@@ -47,7 +47,13 @@ class ScaffoldGeneratorCommand extends GeneratorCommand
         $rcs = $this->option('rcs');
         $rcsr = $this->option('rcsr');
 
-        Artisan::call('make:model', ['name' => $this->argument('name')]);
+        if($all || $model || $modelMigration) {
+            $args = ['name' => $name];
+            if($modelMigration) {
+                $args['-m'] = true;
+            }
+            Artisan::call('make:model', $args);
+        }
 
         return parent::handle();
     }
