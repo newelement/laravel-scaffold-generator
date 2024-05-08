@@ -16,7 +16,5 @@
                 "Newelement\\LaravelScaffoldGenerator\\LaravelScaffoldGeneratorServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
