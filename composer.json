@@ -1,0 +1,22 @@
+{
+    "name": "newelement/laravel-scaffold-generator",
+    "description": "Commands to create dev design pattern",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Newelement\\LaravelScaffoldGenerator\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Newelement\\LaravelScaffoldGenerator\\LaravelScaffoldGeneratorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
