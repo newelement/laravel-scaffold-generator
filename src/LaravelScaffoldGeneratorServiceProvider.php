@@ -11,7 +11,7 @@ class LaravelScaffoldGeneratorServiceProvider extends ServiceProvider
         $this->registerConsoleCommands();
     }
 
-    public function boot(Router $router)
+    public function boot()
     {
         $stubsDirectory = __DIR__.'/../stubs';
 
